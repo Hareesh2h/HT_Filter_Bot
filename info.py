@@ -14,7 +14,7 @@ SESSION = environ.get('SESSION', 'TechVJBot')
 API_ID = int(environ.get('API_ID', '1377120'))
 API_HASH = environ.get('API_HASH', '48a8599a656e9fe9d0a49ebf16046f91')
 BOT_TOKEN = environ.get('BOT_TOKEN', "7506039690:AAG9l-zvzDVq8ttQCajKEh4XGnw43UpZJ40")
-BOT_TOKEN = environ.get('BOT_TOKEN', "7964669052:AAG_-mScbEnHyp26w0vPosO7E2zPCFrvnzo")
+
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
@@ -30,7 +30,7 @@ AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001234567890'))
 
 # This Is File Channel Where You Upload Your File Then Bot Automatically Save It In Database 
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002383761897').split()]  # For Multiple Id Use One Space Between Each.
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002383761897 -1002180911106').split()]  # For Multiple Id Use One Space Between Each.
 
 # auth_channel means force subscribe channel.
 # if REQUEST_TO_JOIN_MODE is true then force subscribe work like request to join fsub, else if false then work like normal fsub.
