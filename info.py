@@ -13,7 +13,7 @@ id_pattern = re.compile(r'^.\d+$')
 SESSION = environ.get('SESSION', 'TechVJBot')
 API_ID = int(environ.get('API_ID', '1377120'))
 API_HASH = environ.get('API_HASH', '48a8599a656e9fe9d0a49ebf16046f91')
-BOT_TOKEN = environ.get('BOT_TOKEN', "7506039690:AAG9l-zvzDVq8ttQCajKEh4XGnw43UpZJ40")
+BOT_TOKEN = environ.get('BOT_TOKEN', "7964669052:AAG_-mScbEnHyp26w0vPosO7E2zPCFrvnzo")
 
 
 
@@ -60,8 +60,8 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://hareeshtalari21:shcahGTIv3H9C8ol@cluster1.67hrw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1")   # IF Multiple Database Is False Then Fill Only This Database Url.
-DATABASE_NAME = environ.get('DATABASE_NAME', "hareeshtalari5")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://hareeshtalari21:hRkvnxAM3uZJNpy8@cluster0.uptlw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")   # IF Multiple Database Is False Then Fill Only This Database Url.
+DATABASE_NAME = environ.get('DATABASE_NAME', "hareeshtalari21")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'htcollection')
 
 MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', False)) # Set True or False
